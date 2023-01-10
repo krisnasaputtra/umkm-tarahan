@@ -1,0 +1,168 @@
+* {
+  text-decoration: none;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, "sans-serif";
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@for $i from 1 through 12 {
+  .col#{$i} {
+    width: (100%/ (12 / $i)) - 3%;
+    margin: 1.5%;
+  }
+}
+
+.btn {
+  background-color: #37f713;
+  border-radius: 20px;
+  padding: 10px 30px;
+  color: white;
+}
+
+.nav-menu {
+  a {
+    color: black;
+    margin-right: 20px;
+  }
+}
+
+.nav-brand {
+  h1 {
+    a {
+      color: black;
+    }
+  }
+}
+
+.nav-space {
+  margin: 0 1.5%;
+}
+
+.img-responsive {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.deskripsi-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.keunggulan-judul {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.produk-judul {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.galeri-judul {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.anggota-judul {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.icon64 {
+  width: 64px;
+}
+
+.keunggulan-deskrip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer {
+  .share {
+    padding: 1rem 0;
+  }
+}
+
+.footer {
+  .share {
+    a {
+      height: 5rem;
+      width: 5rem;
+      line-height: 5rem;
+      font-size: 2rem;
+      color: black;
+      margin: 0.3rem;
+      border-radius: 50%;
+    }
+  }
+}
+
+.footer {
+  .credit {
+    font-size: 2rem;
+    color: black;
+    font-weight: lighter;
+    padding: 1.5rem;
+  }
+}
+
+.footer {
+  .credit {
+    span {
+      color: #d3ad7f;
+    }
+  }
+}
+
+.text-anggota {
+  text-align: center;
+}
+
+.contact {
+  margin-top: 20px;
+  border-top: 1px solid black;
+}
+
+@media screen and (max-width: 640px) {
+  @for $i from 1 through 12 {
+    .col#{$i} {
+      width: 100%;
+    }
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
