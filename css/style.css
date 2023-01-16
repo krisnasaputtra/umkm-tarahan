@@ -181,8 +181,13 @@ body {
   color: #d3ad7f;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-anggota {
   text-align: center;
+  font-weight: bold;
 }
 
 .contact {
@@ -230,4 +235,4 @@ body {
   iframe {
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
