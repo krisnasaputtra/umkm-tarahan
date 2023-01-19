@@ -235,4 +235,25 @@ body {
   iframe {
     width: 100%;
   }
+  #nav-menu {
+    display: none;
+  }
 } /*# sourceMappingURL=style.css.map */
+
+.nav-list a {
+  color: black;
+}
+.list {
+  border-top: 1px solid black;
+  padding: 10px;
+}
+
+.inv {
+  display: none;
+}
+
+@media screen and (min-width: 699px) {
+  .navbar {
+    display: none;
+  }
+}

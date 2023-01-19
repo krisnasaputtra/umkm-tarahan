@@ -30,7 +30,16 @@
                 <div class="nav-brand">
                     <h1><a href="">Sanggar Tapis Rakata</a></h1>
                 </div>
-                <div class="nav-menu">
+                <div class="navbar">
+                    <button id="btn-nav">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="nav-menu" id="nav-menu">
                     <a href="#tentang">Tentang</a>
                     <a href="#keunggulan">Keunggulan</a>
                     <a href="#produk">Produk</a>
@@ -42,6 +51,32 @@
         </div>
     </div>
     <!-- End Header -->
+    <!-- Nav responsive -->
+    <div class="container">
+        <div class="nav-list inv navbar" id="nav-list">
+            <center>
+                <div class="list">
+                    <a href="#tentang">Tentang</a>
+                </div>
+                <br />
+                <div class="list">
+                    <a href="#keunggulan">Keunggulan</a>
+                </div>
+                <br />
+                <div class="list">
+                    <a href="#produk">Produk</a>
+                </div>
+                <br />
+                <div class="list">
+                    <a href="#galeri">Galeri</a>
+                </div>
+                <br />
+                <a href="https://wa.link/22oknn" class="btn"><b>Kontak</b></a>
+            </center>
+        </div>
+    </div>
+    <br />
+    <!-- End Nav Responsive -->
     <!-- Hero -->
     <div class="hero" id="tentang">
         <div class="container">
@@ -409,7 +444,12 @@
         </section>
     </div>
 
-
+    <script>
+        var list = document.getElementById("nav-list");
+        document.getElementById("btn-nav").addEventListener("click", () => {
+            list.classList.toggle("inv");
+        });
+    </script>
 
 
     <!--  -->
